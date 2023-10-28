@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+<style>
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green; 
+  padding:50px;
+  border-radius:25px;
+  background-color:rgba(21, 21, 21, .88);
+}
+
+.centernobg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  padding:50px;
+}
+
+h1{
+  font-family: 'Trebuchet MS', sans-serif;
+  color: rgba(255, 255, 255, .88);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+}
+h2{
+  font-family: 'Trebuchet MS', sans-serif;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  letter-spacing: 0.2rem;
+  font-size: 5rem;
+  background-image: url('tacobell.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  opacity: 0.75;
+  border-radius:25px;
+  padding:35px;
+  text-shadow: 5px 0 0 #000, 0 -5px 0 #000, 0 5px 0 #000, -5px 0 0 #000;
+  border: 3px solid black;
+}
+#mcdonalds::before {
+  opacity: 0.35;
+  background-image: url('mcdonalds.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+#wendys::before {
+  opacity: 0.35;
+  background-image: url('wendys.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+#burgerking::before {
+  opacity: 0.35;
+  background-image: url('burgerking.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+#tacobell::before {
+  opacity: 0.35;
+  background-image: url('tacobell.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+<div class="centernobg">
+  <h2>Taco Bell</h2>
+</div>
+<div class="center">
+  <button id="tacobell" style="--clr:#39FF14"><span>Soft Tacos</span><i></i></button>
+  <button id="tacobell" style="--clr:#FF44CC"><span>Crunchy Tacos</span><i></i></button>
+  <button id="tacobell" style="--clr:#0FF0FC"><span>5-Layer Burrito</span><i></i></button>
+  <button id="tacobell" style="--clr:#8A2BE2"><span>Cheesy Roll up</span><i></i></button>
+</div>
+<div class="center">
+  <h1>Most Popular Menu Items</h1>
+</div>
+</body>
+</html>

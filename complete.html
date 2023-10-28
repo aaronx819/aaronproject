@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+<style>
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #27272c;
+  background-image: url("dark_background.jpg") !important;
+  background-color: #cccccc;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green; 
+  padding:50px;
+  border-radius:25px;
+  background-color:rgba(21, 21, 21, .88);
+}
+
+.centernobg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  padding:50px;
+}
+
+h1{
+  font-family: 'Trebuchet MS', sans-serif;
+  color: rgba(255, 255, 255, .88);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+}
+h2{
+  font-family: 'Trebuchet MS', sans-serif;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  letter-spacing: 0.2rem;
+  font-size: 5rem;
+  background-image: url('tacobell.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  opacity: 0.75;
+  border-radius:25px;
+  padding:35px;
+  text-shadow: 5px 0 0 #000, 0 -5px 0 #000, 0 5px 0 #000, -5px 0 0 #000;
+  border: 3px solid black;
+}
+#mcdonalds::before {
+  opacity: 0.35;
+  background-image: url('mcdonalds.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+#wendys::before {
+  opacity: 0.35;
+  background-image: url('wendys.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+#burgerking::before {
+  opacity: 0.35;
+  background-image: url('burgerking.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+#tacobell::before {
+  opacity: 0.35;
+  background-image: url('tacobell.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+<div class="centernobg">
+  <h2>Taco Bell</h2>
+</div>
+
+<ul>
+  <li class="card" style="--color:#ececec; --bg-color:#032437">
+    <div class="title" style="padding-left:15px;">Please drive to your destination.</div>
+    <div class="content"><img src="preview.jpg" width="95%"></img></div>
+  </li>
+
+</ul>
+
+</body>
+</html>

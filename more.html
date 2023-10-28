@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+<style>
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green; 
+  padding:50px;
+  border-radius:25px;
+  background-color:rgba(21, 21, 21, .88);
+}
+
+.centernobg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  padding:50px;
+}
+
+h1{
+  font-family: 'Trebuchet MS', sans-serif;
+  color: rgba(255, 255, 255, .88);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+}
+h2{
+  font-family: 'Trebuchet MS', sans-serif;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  letter-spacing: 0.2rem;
+  font-size: 5rem;
+  background-image: url('tacobell.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  opacity: 0.75;
+  border-radius:25px;
+  padding:35px;
+  text-shadow: 5px 0 0 #000, 0 -5px 0 #000, 0 5px 0 #000, -5px 0 0 #000;
+  border: 3px solid black;
+}
+#mcdonalds::before {
+  opacity: 0.35;
+  background-image: url('mcdonalds.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+#wendys::before {
+  opacity: 0.35;
+  background-image: url('wendys.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+#burgerking::before {
+  opacity: 0.35;
+  background-image: url('burgerking.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+#tacobell::before {
+  opacity: 0.35;
+  background-image: url('tacobell.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+<div class="centernobg">
+  <h2>Taco Bell</h2>
+</div>
+
+<ul>
+  <li class="card" style="--color:#ececec; --bg-color:#E98B43">
+    <div class="icon"><i class="fa-solid fa-house"></i></div>
+    <div class="title">Add to your order?</div>
+    <div class="content">Please press here or say "add more items" to add additional food to your order. If you wish to add a bundle, please say "bundle"</div>
+  </li>
+  <li class="card" style="--color:#ececec; --bg-color:#C23D2A">
+    <div class="icon"><i class="fa-solid fa-gear"></i></div>
+    <div class="title">Complete your order</div>
+    <div class="content">Please press here or say "order complete" to complete your order and proceed to your GPS location services and promptly pick up your requested order.</div>
+  </li>
+
+</ul>
+
+</body>
+</html>
