@@ -77,7 +77,12 @@ h2{
   background-position: 50% 0;
   background-size: cover;
 }
+
+div:hover{
+  cursor: pointer;
+}
 </style>
+<script type="text/javascript" src="speech.js"></script>
 </head>
 <body>
 <div class="centernobg">
@@ -87,13 +92,13 @@ h2{
 <ul>
   <li class="card" style="--color:#ececec; --bg-color:#E98B43">
     <div class="icon"><i class="fa-solid fa-house"></i></div>
-    <div class="title">Add to your order?</div>
-    <div class="content">Please press here or say "add more items" to add additional food to your order. If you wish to add a bundle, please say "bundle"</div>
+    <div class="title" onclick="location.href='selected.html';">Add to your order?</div>
+    <div class="content" onclick="location.href='selected.html';">Please press here or say "add more items" to add additional food to your order. If you wish to add a bundle, please say "bundle"</div>
   </li>
   <li class="card" style="--color:#ececec; --bg-color:#C23D2A">
     <div class="icon"><i class="fa-solid fa-gear"></i></div>
-    <div class="title">Complete your order</div>
-    <div class="content">Please press here or say "order complete" to complete your order and proceed to your GPS location services and promptly pick up your requested order.</div>
+    <div class="title" onclick="location.href='complete.html';">Complete your order</div>
+    <div class="content" onclick="location.href='complete.html';">Please press here or say "order complete" to complete your order and proceed to your GPS location services and promptly pick up your requested order.</div>
   </li>
 
 </ul>

@@ -77,17 +77,22 @@ h2{
   background-position: 50% 0;
   background-size: cover;
 }
+button:hover{
+  cursor: pointer;
+}
+
 </style>
+<script type="text/javascript" src="speech.js"></script>
 </head>
 <body>
 <div class="centernobg">
   <h2>Taco Bell</h2>
 </div>
 <div class="center">
-  <button id="tacobell" style="--clr:#39FF14"><span>Soft Tacos</span><i></i></button>
-  <button id="tacobell" style="--clr:#FF44CC"><span>Crunchy Tacos</span><i></i></button>
-  <button id="tacobell" style="--clr:#0FF0FC"><span>5-Layer Burrito</span><i></i></button>
-  <button id="tacobell" style="--clr:#8A2BE2"><span>Cheesy Roll up</span><i></i></button>
+  <button id="tacobell" style="--clr:#39FF14" onclick="location.href='more.html';"><span>Soft Tacos</span><i></i></button>
+  <button id="tacobell" style="--clr:#FF44CC" onclick="location.href='more.html';"><span>Crunchy Tacos</span><i></i></button>
+  <button id="tacobell" style="--clr:#0FF0FC" onclick="location.href='more.html';"><span>5-Layer Burrito</span><i></i></button>
+  <button id="tacobell" style="--clr:#8A2BE2" onclick="location.href='more.html';"><span>Cheesy Roll up</span><i></i></button>
 </div>
 <div class="center">
   <h1>Most Popular Menu Items</h1>
