@@ -15,7 +15,7 @@ recognition.addEventListener('result', (e)=> {
 recognition.start();
 
 function selectPage(fileName,text){
-	if(fileName == 'index.html' && text.includes("taco")){
+	if((fileName == 'index.html' || fileName == '' ) && text.includes("taco")){
 		location.href='selected.html';
 	}
 
