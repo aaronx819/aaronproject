@@ -86,15 +86,21 @@ div:hover{
 </head>
 <body>
 <div class="centernobg">
-  <h2>Taco Bell</h2>
+  <h2>Check Your Order</h2>
 </div>
 
 <ul>
   <li class="card" style="--color:#ececec; --bg-color:#E98B43">
-    <div class="icon"><i class="fa-solid fa-house"></i></div>
-    <div class="title" onclick="location.href='selected.html';">Add to your order?</div>
-    <div class="content" onclick="location.href='selected.html';">Please press here or say "add more items" to add additional food to your order. If you wish to add a bundle, please say "bundle"</div>
+    <div class="title">Your Current Order</div>
+    <div class="content" id="orderlist"></div>
   </li>
+
+  <li class="card" style="--color:#ececec; --bg-color:#E98B43">
+    <div class="icon"><i class="fa-solid fa-house"></i></div>
+    <div class="title" onclick="location.href='selected.html';">Modify your order?</div>
+    <div class="content" onclick="location.href='selected.html';">Please press here or say "change items" to change the contents of your order.</div>
+  </li>
+
   <li class="card" style="--color:#ececec; --bg-color:#C23D2A">
     <div class="icon"><i class="fa-solid fa-gear"></i></div>
     <div class="title" onclick="location.href='complete.html';">Complete your order</div>
@@ -102,6 +108,19 @@ div:hover{
   </li>
 
 </ul>
+<script>
+const params = new URLSearchParams(window.location.search);
 
+for (const [key, value] of params){
+  if(value == "undefined"){
+    continue;
+  }
+  var iDiv = document.createElement('span');
+  iDiv.id = 'block';
+  iDiv.className = 'block';
+  iDiv.innerHTML = "<b style='font-size:26px; color:yellow;'>"+key+ ": "+value+"</b><hr>";
+  document.getElementById('orderlist').appendChild(iDiv);
+}
+</script>
 </body>
 </html>

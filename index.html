@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv='cache-control' content='no-cache'> 
+<meta http-equiv='expires' content='0'> 
+<meta http-equiv='pragma' content='no-cache'>
+  
   <link href="style.css" rel="stylesheet" type="text/css"/>
 <style>
 .center {
@@ -82,20 +86,42 @@ button:hover{
 }
 </style>
 
-<script type="text/javascript" src="speech.js"></script>
+<script type="text/javascript" src="speech.js">
+
+</script>
+
+
 </head>
 <body>
 <div class="centernobg">
   <h2>Drive Thru+</h2>
 </div>
 <div class="center">
-  <button id="mcdonalds" style="--clr:#39FF14" onclick="location.href='selected.html';"><span>Mc Donalds</span><i></i></button>
-  <button id="wendys" style="--clr:#FF44CC" onclick="location.href='selected.html';"><span>Wendy's</span><i></i></button>
-  <button id="burgerking" style="--clr:#0FF0FC" onclick="location.href='selected.html';"><span>Burger King</span><i></i></button>
-  <button id="tacobell" style="--clr:#8A2BE2" onclick="location.href='selected.html';"><span>Taco Bell</span><i></i></button>
+  <button id="mcdonalds" key="restaurant" style="--clr:#39FF14" onclick="location.href='selected.html';"><span>Mc Donalds</span><i></i></button>
+  <button id="wendys" key="restaurant" style="--clr:#FF44CC" onclick="location.href='selected.html';"><span>Wendy's</span><i></i></button>
+  <button id="burgerking" key="restaurant"  style="--clr:#0FF0FC" onclick="location.href='selected.html';"><span>Burger King</span><i></i></button>
+  <button id="tacobell" key="restaurant" style="--clr:#8A2BE2" onclick="location.href='selected.html';"><span>Taco Bell</span><i></i></button>
 </div>
 <div class="center">
   <h1>Available Nearby Locations <br/> Please use google Chrome for testing. for testing purposes, all links go to taco bell.</h1>
 </div>
+
+<script>
+window.onload = function(){ 
+    var el = document.getElementById('mcdonalds');
+    el.onclick = clickEvent;
+
+    var el = document.getElementById('wendys');
+    el.onclick = clickEvent;
+
+    var el = document.getElementById('burgerking');
+    el.onclick = clickEvent;
+
+    var el = document.getElementById('tacobell');
+    el.onclick = clickEvent;
+};
+
+</script>
+
 </body>
 </html>

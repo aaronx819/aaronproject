@@ -49,28 +49,28 @@ h2{
   text-shadow: 5px 0 0 #000, 0 -5px 0 #000, 0 5px 0 #000, -5px 0 0 #000;
   border: 3px solid black;
 }
-#mcdonalds::before {
+#popular4::before {
   opacity: 0.35;
   background-image: url('mcdonalds.jpg');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
 }
-#wendys::before {
+#creamy3::before {
   opacity: 0.35;
   background-image: url('wendys.jpg');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
 }
-#burgerking::before {
+#soft2::before {
   opacity: 0.35;
   background-image: url('burgerking.jpg');
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
 }
-#tacobell::before {
+#crunchy1::before {
   opacity: 0.35;
   background-image: url('tacobell.jpg');
   background-repeat: no-repeat;
@@ -82,20 +82,37 @@ button:hover{
 }
 
 </style>
-<script type="text/javascript" src="speech.js"></script>
 </head>
 <body>
 <div class="centernobg">
   <h2>Taco Bell</h2>
 </div>
 <div class="center">
-  <button id="tacobell" style="--clr:#39FF14" onclick="location.href='more.html';"><span>Soft Tacos</span><i></i></button>
-  <button id="tacobell" style="--clr:#FF44CC" onclick="location.href='more.html';"><span>Crunchy Tacos</span><i></i></button>
-  <button id="tacobell" style="--clr:#0FF0FC" onclick="location.href='more.html';"><span>5-Layer Burrito</span><i></i></button>
-  <button id="tacobell" style="--clr:#8A2BE2" onclick="location.href='more.html';"><span>Cheesy Roll up</span><i></i></button>
+  <button id="crunchy1" key="order1" style="--clr:#39FF14" onclick="location.href='more.html';"><span>Example crunchy #1</span><i></i></button>
+  <button id="soft2" key="order2" style="--clr:#FF44CC" onclick="location.href='more.html';"><span>Example soft #2</span><i></i></button>
+  <button id="creamy3" key="order3" style="--clr:#0FF0FC" onclick="location.href='more.html';"><span>Example creamy #3</span><i></i></button>
+  <button id="popular4" key="order4" style="--clr:#8A2BE2" onclick="location.href='more.html';"><span>Example popular #4</span><i></i></button>
 </div>
 <div class="center">
   <h1>Most Popular Menu Items</h1>
 </div>
+<script type="text/javascript" src="speech.js"></script>
+<script>
+window.onload = function(){ 
+    var el = document.getElementById('crunchy1');
+    el.onclick = clickEvent;
+
+    var el = document.getElementById('soft2');
+    el.onclick = clickEvent;
+
+    var el = document.getElementById('creamy3');
+    el.onclick = clickEvent;
+
+    var el = document.getElementById('popular4');
+    el.onclick = clickEvent;
+};
+
+</script>
+
 </body>
 </html>
